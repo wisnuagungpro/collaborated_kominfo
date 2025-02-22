@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Diskominfo</title>
+  <title>DINAS KOMUNIKASI DAN INFORMATIKA - KABUPATEN SEMARANG</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="https://diskominfo.majalengkakab.go.id/wp-content/uploads/2017/05/cropped-logo-diskominfo.png" rel="icon">
+  <link href="css/assets/img/diskominfo_icon.png" rel="icon">
   <link href="css/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -23,6 +23,11 @@
   <link href="css/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="css/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="css/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- CSS tambahan --->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-3/assets/css/blog-3.css">
+
 
   <!-- Main CSS File -->
   <link href="css/assets/css/main.css" rel="stylesheet">
@@ -61,39 +66,59 @@
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Diskominfo</h1>
+          <h1 class="sitename">DISKOMINFO</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li class="dropdown"><a href="#" class="active"><span>Profil</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                    <li><a href="{{ route('profil.index') }}">Visi Misi</a></li>
-                    <li><a href="#">Tugas Pokok dan Fungsi</a></li>
-                    <li><a href="#">Struktur Organisasi</a></li>
-                    <li><a href="#">Pegawai Kominfo</a></li>
-                </ul>
+            <li><a href="#home" class="active">HOME</a></li>
+            <li class="dropdown"><a href="#"><span>PROFIL</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#visimisi">Visi Misi</a></li>
+                <li><a href="#tupoksi">Tugas Pokok dan Fungsi</a></li>
+                <li><a href="#struktur">Struktur Organisasi</a></li>
+                <li><a href="#pegawai">Pegawai</a></li>
+              </ul>
             </li>
-            <li class="dropdown"><a href="#"><span>Sub Unit Kerja</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                    <li><a href="#">Sekretariat</a></li>
-                    <li><a href="#">Bidang Komunikasi dan Informasi Publik</a></li>
-                    <li><a href="#">Bidang Aplikasi dan Informatika</a></li>
-                    <li><a href="#">Bidang Persandian dan Statistik</a></li>
-                </ul>
+            <li class="dropdown"><a href="#"><span>SUB UNIT KERJA</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#sekretariat">Sekretariat</a></li>
+                <li><a href="#bidangkip">Bidang Komunikasi dan Informasi Publik</a></li>
+                <li><a href="#bidangapi">Bidang Aplikasi dan Informatika</a></li>
+                <li><a href="#bidangpds">Bidang Persandian dan Statistik</a></li>
+              </ul>
             </li>
-            <li><a href="#team">PPID</a></li>
-            <li class="dropdown"><a href="#portfolio"><span>Infromasi</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                    <li><a href="#">Pengumuman</a></li>
-                    <li><a href="#">Regulasi</a></li>
-                    <li><a href="#">SOP</a></li>
-                    <li><a href="#">Kebijakan Umum SMKI</a></li>
-                </ul>
+            <li><a href="#">PPID</a></li>
+            <li class="dropdown"><a href="#"><span>INFORMASI</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#pengumuman">Pengumuman</a></li>
+                <li><a href="#regulasi">Regulasi</a></li>
+                <li><a href="#sop">SOP</a></li>
+                <li><a href="#kusmki">Kebijakan Umum SMKI</a></li>
+              </ul>
             </li>
-            <li><a href="#about">Galeri</a></li>
-            <li><a href="#services">Download</a></li>
-            <li><a href="#contact">Kontak</a></li>            
+
+
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -106,8 +131,8 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <!-- Home Section -->
+    <section id="home" class="hero section light-background">
 
       <div class="container">
         <div class="row gy-4">
@@ -169,51 +194,72 @@
 
     </section><!-- /Featured Services Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section light-background">
+    <!-- Visi Misi Section -->
+    <section id="visimisi" class="about section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+        <h2>Profil</h2>
+        <p><span>VISI</span> <span><font color="darkblue">MISI</font></span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-3">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" alt="" class="img-fluid">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <img src="css/assets/img/about.jpg" alt="" class="img-fluid">
           </div>
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-7 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="about-content ps-0 ps-lg-3">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+              <h3>VISI</h3>
+              <p class="text-visi">
+                Menjadi Fasilitator Penerapan dan Pengembangan E-Government serta 
+                Pemantapan Layanan Informasi Publik dalam Penyelenggaraan 
+                Pemerintahan dan Pembangunan Daerah Kabupaten Semarang
               </p>
+              <h3><span><font color="darkblue"> MISI</font></span></h3>
               <ul>
                 <li>
-                  <i class="bi bi-diagram-3"></i>
                   <div>
-                    <h4>Ullamco laboris nisi ut aliquip consequat</h4>
-                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                    <i class="bi bi-person-arms-up"></i>
+                  </div>
+                  <div>
+                    <p class="text-misi">Peningkatan kualitas SDM aparatur dan masyarakat dibidang teknologi informasi dan komunikasi</p>
                   </div>
                 </li>
                 <li>
-                  <i class="bi bi-fullscreen-exit"></i>
+                  <i class="bi bi-house-gear-fill"></i>
                   <div>
-                    <h4>Magnam soluta odio exercitationem reprehenderi</h4>
-                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                    <p class="text-misi">Mendukung terwujudnya tata kelola pemerintahan yang baik melalui penerapan dan pengembangan e-Government</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrows-fullscreen"></i>
+                  <div>
+                    <p class="text-misi">Memfasilitasi penyebarluasan informasi penyelenggaraan pemerintahan dan pembangunan daerah</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-info-square-fill"></i>
+                  <div>
+                    <p class="text-misi">Mengembangkan data/informasi/statistik daerah yang berkualitas sebagai bahan penyusunan perencanaan daerah</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-shield-plus"></i>
+                  <div>
+                    <p class="text-misi">Memfasilitasi dan meningkatkan dukungan keamanan informasi internal melalui pengelolaandan layanan persandian</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-arrow-up-circle-fill"></i>
+                  <div>
+                    <p class="text-misi">Peningkatan kualitas pembinaan manajemen dan dukungan administrasi dinas</p>
                   </div>
                 </li>
               </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
-              </p>
             </div>
 
           </div>
@@ -221,7 +267,1052 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section><!-- /Visi-Misi Section -->
+
+    <!-- Tupoksi Section -->
+    <section id="tupoksi" class="featured-services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Profil</h2>
+        <p><span>TUGAS POKOK</span> <span><font color="darkblue">DAN FUNGSI</font></span></p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-7">
+
+          <div class="col-xl-2 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon text-center"><i class="bi bi-activity icon"></i></div>
+              <h4 class="text-center"><a href="" class="stretched-link">Tugas Pokok</a></h4>
+              <p class="text-tupoksi">Dinas Komunikasi dan Informatika  mempunyai tugas membantu Bupati  menyelenggarakan urusan pemerintahan bidang komunikasi dan informatika, bidang statistik dan bidang persandian</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-2 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon text-center"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4 class="text-center"><a href="" class="stretched-link">#1 Fungsi</a></h4>
+              <p class="text-tupoksi">Perumusan kebijakan bidang komunikasi dan informatika, statistik dan persandian</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-2 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon text-center"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4 class="text-center"><a href="" class="stretched-link">#2 Fungsi</a></h4>
+              <p class="text-tupoksi">Pelaksanaan kebijakan di bidang komunikasi dan informatika, statistik dan persandian</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-2 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon text-center"><i class="bi bi-file-earmark-check icon"></i></div>
+              <h4 class="text-center"><a href="" class="stretched-link">#3 Fungsi</a></h4>
+              <p class="text-tupoksi">Pelaksanaan evaluasi dan pelaporan penyelenggaraan urusan pemerintahan bidang komunikasi dan informatika, bidang statistik dan bidang persandian</p>
+            </div>
+          </div>
+          
+          <div class="col-xl-2 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon text-center"><i class="bi bi-journal-album icon"></i></div>
+              <h4 class="text-center"><a href="" class="stretched-link">#4 Fungsi</a></h4>
+              <p class="text-tupoksi">Pelaksanaan administrasi Dinas</p>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon text-center"><i class="bi bi-person-plus icon"></i></div>
+              <h4 class="text-center"><a href="" class="stretched-link">#5 Fungsi</a></h4>
+              <p class="text-tupoksi">Pelaksanaan fungsi lain yang diberikan oleh Bupati  terkait dengan tugas dan fungsinya</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Tupoksi Section -->
+
+
+        <!-- Struktur Organiasai Section -->
+        <section id="struktur" class="team section light-background">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Profil</h2>
+            <p><span>Struktur</span> <span class="description-title">Organisasi</span></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row gy-4">
+              <div class="col-lg-4 d-flex align-middle">&nbsp;</div>
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Petrus Triyono, S.Sos, M.Si</h4>
+                    <span>Kepala Dinas Komunikasi dan Informatika</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="row"></div>
+    
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Sidiq Sudibyo, S.T., M.T.</h4>
+                    <span>Sekretaris Dinas Komunikasi dan Informatika</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+    
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Nia Puspita Sari, S.E.</h4>
+                    <span>Kepala Subbagian Perencanaan dan Keuangan</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+    
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Devi Agustini, S.E., M.M.</h4>
+                    <span>Kepala Subbagian Umum dan Kepegawaian</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Drs. Gatot Harjanto</h4>
+                    <span>Kepala Bidang Komunikasi dan Informasi Publik</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Khairul Aulia, S.Kom, M.Eng.</h4>
+                    <span>Kepala Dinas Aplikasi dan Informatika</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-member">
+                  <div class="member-img">
+                    <img src="css/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter-x"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                  <div class="member-info">
+                    <h4>Amelia Greta Paulina, S.StTP, M.M. </h4>
+                    <span>Kepala Bidang Persandian dan Statistik</span>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+            </div>
+          </div>
+        </section><!-- /Struktur Organisasi Section -->
+
+
+
+    <!-- Pegawai Section -->
+    <section id="pegawai" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Profil</h2>
+        <p><span>Keluarga Besar</span> <span class="description-title">Diskominfo Kabupaten Semarang</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-6">
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="css/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Petrus Triyono, S.Sos., M.Si.</h4>
+                <span>Kepala Dinas Komunikasi dan Informatika</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="css/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sidiq Sudibyo, S.T., M.T.</h4>
+                <span>Sekretaris Dinas Komunikasi dan Informatika</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="css/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Drs. Gatot Harjanto</h4>
+                <span>Kepala Bidang Komunikasi dan Informasi Publik</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="css/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Khairul Aulia, S.Kom., M.Eng.</h4>
+                <span>Kepala Bidang Aplikasi dan Informatika</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="css/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amelia Greta Paulina, S.STP., M.M.</h4>
+                <span>Kepala Bidang Persandian dan Statistik</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="css/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Devi Agustini, S.E., M.M.</h4>
+                <span>Kepala Subbagian Umum dan Kepegawaian</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+    </section><!-- /Pegawai Section -->
+
+
+
+        <!-- Sekretariat Section -->
+        <section id="sekretariat" class="about section light-background">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Sub Unit Kerja</h2>
+            <p><span>Sekretariat</span></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row-auto">
+    
+              <div class="col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                <img src="css/assets/img/sekretariat.jpeg" alt="" class="img-fluid">
+              </div>
+              
+              <div class="row">&nbsp;</div>
+
+              <div class="col-md-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                               
+                <div class="about-content ps-0 ps-lg-3">
+                  
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center">TUGAS</h3>
+                      <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xl-6 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <p class="text-tugas-sekretariat">
+                              Melaksanakan sebagian tugas Dinas Komunikasi dan Informatika dibidang penyusunan perencanaan, 
+                              pengelolaan administrasi keuangan, administrasi umum, dan administrasi kepegawaian
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </section>
+
+                  
+
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center"><span><font color="darkblue">FUNGSI</font></span></h3>
+                      <div class="row gy-8">
+                        
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-person-vcard-fill icon"></i></div>
+                            <p class="text-fungsi-sekretariat">Pengelolaan administrasi umum, kepegawaian dan rumah tangga Dinas</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-currency-dollar icon"></i></div>
+                            <p class="text-fungsi-sekretariat">Pengelolaan administrasi bidang keuangan Dinas</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-file-text-fill icon"></i></div>
+                            <p class="text-fungsi-sekretariat">Pelaksanaan perencanaan, monitoring, evaluasi dan pelaporan kegiatan Dinas</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                      </div>
+                    </div>
+                  </section>
+                  
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+        </section><!-- /Sekretariat Section -->
+
+
+
+        <!-- Bidang KIP Section -->
+        <section id="bidangkip" class="about section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Sub Unit Kerja</h2>
+            <p><span>Bidang Komunikasi dan Informasi Publik</span></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row-auto">
+    
+              <div class="col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                <img src="css/assets/img/bidangkip.jpeg" alt="" class="img-fluid">
+              </div>
+              
+              <div class="row">&nbsp;</div>
+
+              <div class="col-md-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                               
+                <div class="about-content ps-0 ps-lg-3">
+                  
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center">TUGAS</h3>
+                      <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xl-6 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <p class="text-tugas-dinaskip">
+                              Melaksanakan sebagian tugas Dinas Komunikasi dan Informatika di bidang Komunikasi dan Informasi Publik
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center"><span><font color="darkblue">FUNGSI</font></span></h3>
+                      <div class="row gy-8">
+                        
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-bank icon"></i></div>
+                            <p class="text-fungsi-dinaskip">Perumusan kebijakan teknis Bidang Informasi dan Komunikasi Publik</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-people-fill icon"></i></div>
+                            <p class="text-fungsi-dinaskip">Pengoordinasian pelaksanaan kegiatan Bidang Informasi dan Komunikasi Publik</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-book-half icon"></i></div>
+                            <p class="text-fungsi-dinaskip">Pelaksanaan monitoring, evaluasi dan pelaporan pelaksanaan kegiatan Bidang Informasi dan Komunikasi Publik</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                      </div>
+                    </div>
+                  </section>
+                  
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+        </section><!-- /Bidang KIP Section -->
+
+
+        <!-- Bidang API Section -->
+        <section id="bidangapi" class="about section light-background">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Sub Unit Kerja</h2>
+            <p><span>Bidang Aplikasi dan Informatika</span></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row-auto">
+    
+              <div class="col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                <img src="css/assets/img/bidangapi.jpeg" alt="" class="img-fluid">
+              </div>
+              
+              <div class="row">&nbsp;</div>
+
+              <div class="col-md-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                               
+                <div class="about-content ps-0 ps-lg-3">
+                  
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center">TUGAS</h3>
+                      <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xl-6 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <p class="text-tugas-dinasapi">
+                              Melaksanakan sebagian tugas Dinas Komunikasi dan Informatika dibidang Aplikasi dan Informatika
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center"><span><font color="darkblue">FUNGSI</font></span></h3>
+                      <div class="row gy-8">
+                        
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-bank icon"></i></div>
+                            <p class="text-fungsi-dinasapi">Penyusunan kebijakan teknis dibidang Aplikasi dan Informatika</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-people-fill icon"></i></div>
+                            <p class="text-fungsi-dinasapi">Pengoordinasian pelaksanakan kegiatan Bidang Aplikasi dan Informatika</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-book-half icon"></i></div>
+                            <p class="text-fungsi-dinasapi">Pelaksanaan monitoring, evaluasi dan pelaporan pelaksanaan kegiatan Bidang Aplikasi Dan Informatika</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                      </div>
+                    </div>
+                  </section>
+                  
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+        </section><!-- /Bidang API Section -->
+
+
+        <!-- Bidang PDS Section -->
+        <section id="bidangpds" class="about section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Sub Unit Kerja</h2>
+            <p><span>Bidang Persandian dan Statistik</span></p>
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row-auto">
+    
+              <div class="col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                <img src="css/assets/img/bidangkip.jpeg" alt="" class="img-fluid">
+              </div>
+              
+              <div class="row">&nbsp;</div>
+
+              <div class="col-md-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                               
+                <div class="about-content ps-0 ps-lg-3">
+                  
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center">TUGAS</h3>
+                      <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-xl-6 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <p class="text-tugas-dinaspds">
+                              Melaksanakan sebagian tugas Dinas Komunikasi dan Informatika dibidang Persandian dan Statistik
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="featured-services section">
+                    <div class="container">
+                      <h3 align="center"><span><font color="darkblue">FUNGSI</font></span></h3>
+                      <div class="row gy-8">
+                        
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-bank icon"></i></div>
+                            <p class="text-fungsi-dinaspds">Perumusan kebijakan teknis dibidang Persandian dan Statistik</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-people-fill icon"></i></div>
+                            <p class="text-fungsi-dinaspds">Pengoordinasian pelaksanaan kegiatan Bidang Persandian dan Statistik</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                        <div class="col-xl-4 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                          <div class="service-item position-relative">
+                            <div class="icon text-center"><i class="bi bi-book-half icon"></i></div>
+                            <p class="text-fungsi-dinaspds">Pelaksanaan monitoring, evaluasi dan pelaporan pelaksanaan kegiatan Bidang Persandian Dan Statistik</p>
+                          </div>
+                        </div><!-- End Service Item -->
+
+                      </div>
+                    </div>
+                  </section>
+                  
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+        </section><!-- /Bidang PDS Section -->
+
+
+
+<!-- COBA NJAJAL --->
+<section id="pengumuman" class="py-3 py-md-5">
+   <!-- Section Title -->
+   <div class="container section-title" data-aos="fade-up">
+    <h2>Pengumuman</h2>
+    <p><span>PENGUMUMAN</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container overflow-hidden">
+    <div class="row gy-4 gy-lg-0">
+      
+      <div class="col-12 col-lg-4">
+        <article>
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="ukuran-gambar img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/pengumuman/pengumuman1.jpg" alt="Business" width="100%" max-height="200px">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <div class="entry-header mb-3">
+                <ul class="entry-meta list-unstyled d-flex mb-2">
+                  <li>
+                    <a class="link-primary text-decoration-none" href="#!">Business</a>
+                  </li>
+                </ul>
+                <h2 class="card-title entry-title h4 mb-0">
+                  <a class="link-dark text-decoration-none" href="#!">Overcoming Challenges to Make a Living Online</a>
+                </h2>
+              </div>
+              <p class="card-text entry-summary text-secondary">
+                Making money online is attainable. However, even if the processes are simple, you may still need help with issues.
+              </p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">7 Feb 2023</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="px-3">&bull;</span>
+                </li>
+                <li>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                      <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">55</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">&nbsp;</div>
+      </div>
+      
+      <div class="col-12 col-lg-4">
+        <article>
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="ukuran-gambar img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/pengumuman/pengumuman1.jpg" alt="Business" width="100%" height="auto">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <div class="entry-header mb-3">
+                <ul class="entry-meta list-unstyled d-flex mb-2">
+                  <li>
+                    <a class="link-primary text-decoration-none" href="#!">Business</a>
+                  </li>
+                </ul>
+                <h2 class="card-title entry-title h4 mb-0">
+                  <a class="link-dark text-decoration-none" href="#!">Overcoming Challenges to Make a Living Online</a>
+                </h2>
+              </div>
+              <p class="card-text entry-summary text-secondary">
+                Making money online is attainable. However, even if the processes are simple, you may still need help with issues.
+              </p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">7 Feb 2023</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="px-3">&bull;</span>
+                </li>
+                <li>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                      <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">55</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">&nbsp;</div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <article>
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="ukuran-gambar img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/pengumuman/pengumuman2.jpeg" alt="Nutrition" width="100%" max-height="200px">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInDown" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <div class="entry-header mb-3">
+                <ul class="entry-meta list-unstyled d-flex mb-2">
+                  <li>
+                    <a class="link-primary text-decoration-none" href="#!">Nutrition</a>
+                  </li>
+                </ul>
+                <h2 class="card-title entry-title h4 mb-0">
+                  <a class="link-dark text-decoration-none" href="#!">How to hhhuyuiyui jhhh Achieve Your Nutrition Goals</a>
+                </h2>
+              </div>
+              <p class="card-text entry-summary text-secondary">
+                Fitness trainer explains how nutrition is as important as workouts when it comes to losing fat or building muscle.
+              </p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">12 Aug 2023</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="px-3">&bull;</span>
+                </li>
+                <li>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                      <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">39</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">&nbsp;</div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <article>
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="ukuran-gambar img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/pengumuman/pengumuman3.jpg" alt="Health" width="100%" max-height="200px">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInRight" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <div class="entry-header mb-3">
+                <ul class="entry-meta list-unstyled d-flex mb-2">
+                  <li>
+                    <a class="link-primary text-decoration-none" href="#!">Health</a>
+                  </li>
+                </ul>
+                <h2 class="card-title entry-title h4 mb-0">
+                  <a class="link-dark text-decoration-none" href="#!">10 Tips To Lose Weight Quickly Without Dieting</a>
+                </h2>
+              </div>
+              <p class="card-text entry-summary text-secondary">
+                Chewing slowly and eating more fiber may help you lose weight quickly without exercise or a specific diet plan.
+              </p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">21 Dec 2023</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="px-3">&bull;</span>
+                </li>
+                <li>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                      <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">61</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">&nbsp;</div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <article>
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="ukuran-gambar img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/pengumuman/pengumuman3.jpg" alt="Health" width="100%" height="auto">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInRight" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <div class="entry-header mb-3">
+                <ul class="entry-meta list-unstyled d-flex mb-2">
+                  <li>
+                    <a class="link-primary text-decoration-none" href="#!">Health</a>
+                  </li>
+                </ul>
+                <h2 class="card-title entry-title h4 mb-0">
+                  <a class="link-dark text-decoration-none" href="#!">10 Tips To Lose Weight Quickly Without Dieting</a>
+                </h2>
+              </div>
+              <p class="card-text entry-summary text-secondary">
+                Chewing slowly and eating more fiber may help you lose weight quickly without exercise or a specific diet plan.
+              </p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">21 Dec 2023</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="px-3">&bull;</span>
+                </li>
+                <li>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                      <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">61</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">&nbsp;</div>
+      </div>
+      
+      <div class="col-12 col-lg-4">
+        <article>
+          <div class="card border-0">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#!">
+                <img class="ukuran-gambar img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/pengumuman/pengumuman3.jpg" alt="Health">
+              </a>
+              <figcaption>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-white bsb-hover-fadeInRight" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                </svg>
+                <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read More</h4>
+              </figcaption>
+            </figure>
+            <div class="card-body border bg-white p-4">
+              <div class="entry-header mb-3">
+                <ul class="entry-meta list-unstyled d-flex mb-2">
+                  <li>
+                    <a class="link-primary text-decoration-none" href="#!">Health</a>
+                  </li>
+                </ul>
+                <h2 class="card-title entry-title h4 mb-0">
+                  <a class="link-dark text-decoration-none" href="#!">10 Tips To Lose Weight Quickly Without Dieting</a>
+                </h2>
+              </div>
+              <p class="card-text entry-summary text-secondary">
+                Chewing slowly and eating more fiber may help you lose weight quickly without exercise or a specific diet plan.
+              </p>
+            </div>
+            <div class="card-footer border border-top-0 bg-white p-4">
+              <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">21 Dec 2023</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="px-3">&bull;</span>
+                </li>
+                <li>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                      <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                      <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="ms-2 fs-7">61</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- /COBA NJAJAL --->
+
+
+
+
+
+
+
 
     <!-- Skills Section -->
     <section id="skills" class="skills section">
@@ -371,14 +1462,14 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="css/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
           </div>
         </div>
 
@@ -483,7 +1574,7 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+      <img src="css/assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -507,7 +1598,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="css/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
                 <div class="stars">
@@ -523,7 +1614,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="css/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
                 <div class="stars">
@@ -539,7 +1630,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <img src="css/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
                 <div class="stars">
@@ -555,7 +1646,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="css/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
                 <div class="stars">
@@ -571,7 +1662,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="css/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
                 <div class="stars">
@@ -616,91 +1707,91 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="csa/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="css/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="css/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -729,7 +1820,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="css/assets/img/team/team-1.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -747,7 +1838,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="css/assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -765,7 +1856,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="css/assets/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -783,7 +1874,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="css/assets/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -1077,25 +2168,19 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-            <img src="https://sakip-semarang.simda.net/assets/images/customisasi/1645418312Seal_of_Semarang_Regency.svg.png" width="55px">
-            <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Diskominfo Kabupaten Semarang</span>
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">BizLand</span>
           </a>
-          <p>
-            Selamat datang di situs resmi Diskominfo Kota Semarang. 
-            Temukan informasi terbaru dan layanan digital kami untuk mendukung transparansi 
-            dan kemajuan teknologi di Kota Semarang.
-          </p>
           <div class="footer-contact pt-3">
-            <p>Jalan Diponegoro No.14, Gedung D,</p>
-            <p>Ungaran, 50511</p>
-            <p class="mt-3"><strong>Telepon:</strong> <span>(024) 76901553</span></p>
-            <p><strong>Email:</strong> <span>kominfo@semarangkab.go.id</span></p>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Berita Diskominfo</h4>
+          <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
@@ -1105,7 +2190,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Layanan</h4>
+          <h4>Our Services</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
@@ -1115,8 +2200,8 @@
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Media Sosial</h4>
-          <p>Selalu terhubung dan dapatkan informasi terbaru terkait peristiwa dan event di Kabupaten Semarang</p>
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -1160,7 +2245,7 @@
   <script src="css/assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="css/assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="css/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="ccs/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="css/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="css/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
