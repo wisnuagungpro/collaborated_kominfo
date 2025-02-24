@@ -32,6 +32,8 @@
   <!-- Main CSS File -->
   <link href="css/assets/css/main.css" rel="stylesheet">
 
+
+
   <!-- =======================================================
   * Template Name: BizLand
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -63,7 +65,7 @@
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="#" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="sitename">DISKOMINFO</h1>
@@ -97,8 +99,7 @@
                 <li><a href="#kusmki">Kebijakan Umum SMKI</a></li>
               </ul>
             </li>
-
-
+            <li><a href="#berita">BERITA</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#team">Team</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -931,12 +932,12 @@
 
 
 
-<!-- COBA NJAJAL --->
-<section id="pengumuman" class="py-3 py-md-5">
+<!-- Pengumuman Section --->
+<section id="pengumuman" class="py-3 py-md-5 light-background">
    <!-- Section Title -->
    <div class="container section-title" data-aos="fade-up">
-    <h2>Pengumuman</h2>
-    <p><span>PENGUMUMAN</span></p>
+    <h2>INFORMASI</h2>
+    <p><span>Pengumuman</span></p>
   </div><!-- End Section Title -->
 
   <div class="container overflow-hidden">
@@ -1305,10 +1306,263 @@
   </div>
 </section>
 
-<!-- /COBA NJAJAL --->
+<!-- /Pengumuman Section --->
+
+
+<!-- Regulasi Section -->
+<section id="regulasi" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>INFORMASI</h2>
+    <p><span>Regulasi</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item-box position-relative">
+          <div>
+            <img src="css/assets/img/06-law.png" class="icon">
+          </div>
+          <a href="#" class="stretched-link">
+            <label class="perda-label">Peraturan Daerah</label>
+          </a>
+          <p>Peraturan Daerah Nomor 11 Tahun 2017 Tentang SPBE</p>
+          <div class="row">
+            <div class="col-md-4"><i> Status : </i></div>
+            <div class="regulasi-ya col-md-8">Berlaku</div>  
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item-box position-relative">
+          <div>
+            <img src="css/assets/img/05-law.png" class="icon">
+          </div>
+          <a href="#" class="stretched-link">
+            <label class="perbup-label" >Peraturan Bupati</label>
+          </a>
+          <p>Peraturan Daerah Nomor 11 Tahun 2017 Tentang SPBE</p>
+          <div class="row">
+            <div class="col-md-4"><i> Status : </i></div>
+            <div class="regulasi-ya col-md-8">Berlaku</div>  
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item-box position-relative">
+          <div>
+            <img src="css/assets/img/05-law.png" class="icon">
+          </div>
+          <a href="#" class="stretched-link">
+            <label class="perbup-label">Peraturan Bupati</label>
+          </a>
+          <p>Peraturan Daerah Nomor 11 Tahun 2017 Tentang SPBE</p>
+          <div class="row">
+            <div class="col-md-4"><i> Status : </i></div>
+            <div class="regulasi-ya col-md-8">Berlaku</div>  
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item-box position-relative">
+          <div>
+            <img src="css/assets/img/05-law.png" class="icon">
+          </div>
+          <a href="#" class="stretched-link">
+            <label class="perbup-label">Peraturan Bupati</label>
+          </a>
+          <p>Peraturan Daerah Nomor 11 Tahun 2017 Tentang SPBE</p>
+          <div class="row">
+            <div class="col-md-4"><i> Status : </i></div>
+            <div class="regulasi-ya col-md-8">Berlaku</div>  
+          </div>
+        </div>
+      </div><!-- End Service Item -->
+
+     
+
+    </div>
+
+  </div>
+
+</section><!-- /Regulasi Section -->
+
+
+<!-- SOP Section -->
+<section id="sop" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>S O P</h2>
+     <p><span>Standar Operasional Prosedur</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container text-center">
+    <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
+      <div class="position-relative">
+        <iframe src="dokumen/SOP Diskominfo Pemprov Jateng.pdf" class="iframe-sop" allow="autoplay">xxxxx</iframe>
+      </div>
+    </div>
+  </div>
+</section><!-- /SOP Section -->
+
+
+<!-- Kusmki Section -->
+<section id="kusmki" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>KUSMKI</h2>
+     <p><span>Kebijakan Umum SMKI</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container text-center">
+    <div class="col-md-12" data-aos="fade-up" data-aos-delay="100">
+      <div class="position-relative">
+        <iframe src="dokumen/KUSMKI Diskominfo Pemprov Jateng.pdf" class="iframe-sop" allow="autoplay">xxxxx</iframe>
+      </div>
+    </div>
+  </div>
+</section><!-- /Kusmki Section -->
 
 
 
+    <!-- Berita Section -->
+    <section id="berita" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Berita</h2>
+        <p><span>Informasi</span> <span class="description-title">Terkini</span> & <span class="description-title">Terpercaya</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container berita-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-8 col-md-10 d-flex border position-relative">
+          <div class="col-md-6 berita-background-cover">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/berita/berita1.jpg" alt="Business">
+              </a>
+            </figure>
+          </div>
+
+          <div class="col-md-6 berita-deskripsi">
+            <div class="row">
+              <div class="berita-label-kategori">
+                <p>Bidang Komunikasi dan Informasi Publik</p>
+                <p>Publik Damai</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="berita-judul">
+                <a href="#" class="stretched-link"><h3>DISKOMINFO Kota Semarang Menara Telekomunikasi di Pedurungan</h3></a>
+              </div>             
+            </div>
+           
+            <div class="row">
+              <div class="berita-isi">
+                <p>Semarang, 20 Februari 2025 – 
+                  Dinas Komunikasi dan Informatika (DISKOMINFO) Kota Semarang menghadiri 
+                  rapat koordinasi terkait aduan warga RT 06/RW 01 Pedurungan mengenai 
+                  keberadaan menara telekomunikasi milik PT Mitratel. 
+                  Rapat yang digelar di Kantor Satpol PP ini juga diikuti oleh pihak terkait, 
+                  termasuk perwakilan perusahaan dan instansi teknis lainnya.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <div class="berita-waktu">
+                  <p>20-02-2025 10:56:49</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="berita-pengunggah">
+                  <p>@Superman</p>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="container berita-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-8 col-md-10 d-flex border position-relative">
+          <div class="col-md-6 berita-background-cover">
+            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+              <a href="#">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="css/assets/img/berita/berita1.jpg" alt="Business">
+              </a>
+            </figure>
+          </div>
+
+          <div class="col-md-6 berita-deskripsi">
+            <div class="row">
+              <div class="berita-label-kategori">
+                <p>Bidang Komunikasi dan Informasi Publik</p>
+                <p>Bidang Politik lain</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="berita-judul">
+                <a href="#" class="stretched-link"><h3>DISKOMINFO Kota Semarang Hadiri Rakor Persiapan PKA dan PKP Tahun 2025</h3></a>
+              </div>             
+            </div>
+           
+            <div class="row">
+              <div class="berita-isi">
+                <p>Semarang, 19 Februari 2025 – Dinas Komunikasi dan Informatika (DISKOMINFO) Kota Semarang 
+                  menghadiri Rapat Koordinasi (Rakor) Persiapan Pelatihan Kepemimpinan Administrator (PKA) 
+                  dan Pelatihan Kepemimpinan Pengawas (PKP) Tahun 2025 yang diselenggarakan di
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <div class="berita-waktu">
+                  <p>20-02-2025 10:56:49</p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="berita-pengunggah">
+                  <p>@Superman</p>
+                </div>
+              </div>
+            </div>    
+          </div>        
+        </div>  
+      </div>      
+    </section><!-- /Berita Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ____________________________________________________________________________________ -->
 
 
 
@@ -2250,6 +2504,7 @@
 
   <!-- Main JS File -->
   <script src="css/assets/js/main.js"></script>
+  
 
 </body>
 
